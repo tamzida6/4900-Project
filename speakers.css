@@ -1,0 +1,43 @@
+.header {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.header .dash {
+  display: inline-block;
+  height: 8px;
+  width: 40px;
+  background-color: black;
+  margin: 7px 20px;
+}
+
+.grid {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.grid .col1,
+.grid .col2,
+.grid .col3 {
+  width: 100%;
+  height: 750px;
+}
+.grid .col1 img,
+.grid .col2 img,
+.grid .col3 img {
+  display: block;
+  width: 100%;
+  height: 50%;
+  border-radius: 16px;
+}
+.grid .col1 p,
+.grid .col2 p,
+.grid .col3 p {
+  height: 58%;
+  margin: 0;
+  padding: 20px 10px;
+  font-size: 1.1rem;
+}

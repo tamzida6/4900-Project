@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upcoming Event</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="upcoming.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+    <div class="box1">
+      <ul>
+        <li><a href="login.html"> LOGIN</a></li>
+        <li><a href=""> SIGN UP </a></li>
+      </ul>
+    </div>
+
+    <div class="navBar">
+      <ol>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="speakers.html">SPEAKERS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+      </ol>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="events.html">Past events</a>
+      <a href="upcomin_events.html">Upcoming Events</a>
+      <a href="register_event.html">Sign up</a>
+    </div>
+
+    <div id="main">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
+    </div>
+
+    <div class="main-content">
+      <h1>Upcoming Events</h1>
+      <div class="grid">
+        <img src="ss.jpeg" alt="" class="grid-img" />
+        <p
+          class="grid-text"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+        >
+          <br /><br />
+
+          Join our Women's Pilates classes at the Malikah Center! This class is
+          led by an instructor in a supportive and inclusive environment where
+          you can feel comfortable and confident in exploring the world of
+          Pilates. Please bring a personal yoga mat to the class.<br /><br /><br />Pilates
+          emphasizes core strength, alignment, and breath control, with
+          exercises designed to target specific muscle groups while maintaining
+          proper form and alignment. It can be tailored to individual fitness
+          levels and goals, making it suitable for people of all ages and
+          abilities. Pilates is known for its benefits in improving posture,
+          increasing flexibility, enhancing muscular strength and endurance, and
+          promoting relaxation and stress relief.
+        </p>
+        <h2>Safety Saturdays</h2>
+        <br />
+        <h3>
+          DATE: 06/02/24<br />TIME: 12:00 pm - 2:00 pm<br />LOCATION: NYU kemmel
+          center
+        </h3>
+      </div>
+      <hr class="divisor" />
+      <div class="grid">
+        <div class="img-container">
+          <img src="pinic.jpeg" alt="" class="grid-img" />
+          <h2>EID-AL-ADHA Picnic</h2>
+          <h3>
+            DATE: 06/19/24<br />TIME: 2:00 pm - 6:00 pm <br />LOCATION: CENTRAL
+            PARK
+          </h3>
+          <h4>
+            Join us for a joyful Eid-al-Adha picnic celebration at Central Park!
+            Gather with friends, family, and fellow community members for a day
+            of festivities and relaxation in the heart of nature. Indulge in
+            delicious homemade treats and traditional Eid delicacies as we mark
+            this special occasion together. Take part in fun outdoor activities
+            such as games, storytelling, and group prayers amidst the serene
+            surroundings of Central Park. With laughter, joy, and camaraderie,
+            let's create cherished memories and celebrate the spirit of
+            Eid-al-Adha in the company of loved ones. Don't forget to bring your
+            picnic blankets, smiles, and festive spirit!
+          </h4>
+        </div>
+        <div class="img-container">
+          <img src="crochet.jpeg" alt="" class="grid-img" />
+          <h2>CROCHET</h2>
+          <h4>
+            DATE: 06/05/24<br />TIME: 12:00 pm<br />LOCATION: Brooklyn College
+            Womens Center
+          </h4>
+          <p style="font-family: Arial, Helvetica, sans-serif">
+            <b
+              >Join us at the Brooklyn College Women's Center for a cozy and
+              creative crochet event hosted by MWLDP! Whether you're a seasoned
+              pro or a beginner, come and unwind with us as we explore the art
+              of crochet together. Bring your yarn, needles, and enthusiasm as
+              we share tips, techniques, and patterns in a supportive and
+              inclusive environment. Connect with fellow crocheters, exchange
+              ideas, and let your creativity flow as we craft beautiful pieces
+              and enjoy each other's company. With soothing music, warm vibes,
+              and plenty of inspiration, this event promises to be a delightful
+              opportunity to relax, create, and build community. Don't miss out
+              on this chance to indulge in some self-care and embrace the joy of
+              crafting at the Women's Center!</b
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        // document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>

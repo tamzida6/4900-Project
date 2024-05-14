@@ -1,0 +1,96 @@
+body {
+  background-image: linear-gradient(45deg, rgb(0, 195, 255), rgb(206, 0, 206));
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.event-form {
+  width: 50%;
+  height: fit-content;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.header {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.main-fields {
+  padding: 30px 60px 20px;
+}
+
+.main-fields fieldset {
+  margin: 20px 0;
+  border: none;
+  display: grid;
+}
+.main-fields fieldset:not(.customer-field) {
+  grid-template-columns: 20% 80%;
+}
+
+.main-fields fieldset .name-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.main-fields fieldset .phone-div {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  gap: 10px;
+}
+
+.sub-label {
+  color: rgb(154, 154, 154);
+  font-size: 0.8rem;
+}
+
+.main-fields fieldset input,
+.subject-div select {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgb(230, 230, 230);
+  border: none;
+  border-radius: 8px;
+}
+.main-fields fieldset input:focus {
+  background-color: white;
+}
+
+.radio-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.radio-btn div {
+  margin-top: 10px;
+  display: flex;
+}
+.radio-btn input[type="radio"] {
+  accent-color: #00ffb7;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  padding: 10px 40px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgb(255, 50, 50);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(233, 51, 51);
+}
+
+.confimation-p {
+  padding: 10px 0px 0px;
+  color: #00bf59;
+  text-align: center;
+  display: none;
+}

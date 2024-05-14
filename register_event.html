@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="event_registation.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+    <div class="box1">
+      <ul>
+        <li><a href="login.html"> LOGIN</a></li>
+        <li><a href=""> SIGN UP </a></li>
+      </ul>
+    </div>
+
+    <div class="navBar">
+      <ol>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="./speakers.html">SPEAKERS</a></li>
+        <li><a href="./about.html">ABOUT US</a></li>
+      </ol>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="events.html">Past events</a>
+      <a href="upcomin_events.html">Upcoming Events</a>
+      <a href="register_event.html">Sign up</a>
+    </div>
+
+    <div id="main">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
+    </div>
+    <form action="" class="event-form">
+      <p class="confimation-p"></p>
+      <h1 class="header">Event Registarion Form</h1>
+      <div class="main-fields">
+        <fieldset>
+          <label for="" class="main-label">Name</label>
+          <div class="name-div">
+            <div>
+              <input type="text" />
+              <label for="" class="sub-label">First Name</label>
+            </div>
+            <div>
+              <input type="text" />
+              <label for="" class="sub-label">Last Name</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="" class="main-label">Email</label>
+          <div class="email-div">
+            <input type="email" placeholder="" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="" class="main-label">Phone</label>
+          <div class="phone-div">
+            <div>
+              <input type="text" />
+              <label for="" class="sub-label">Area Code</label>
+            </div>
+            <div>
+              <input type="text" />
+              <label for="" class="sub-label">Phone Number</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="" class="main-label">University / College</label>
+          <div class="uni-div">
+            <input type="text" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="" class="main-label">EVENT</label>
+          <div class="subject-div">
+            <select name="subject" id="subject">
+              <option value="">Choose an Event</option>
+              <option value="">Safety Saturday</option>
+              <option value="">EID-AL-ADHA picnic</option>
+              <option value="">Crochet</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="customer-field">
+          <label for="" class="main-label"
+            >Is this your first time registering with us?</label
+          >
+          <div class="radio-btn">
+            <div>
+              <input type="radio" name="customer" id="customer-yes" checked />
+              <label for="">Yes</label>
+            </div>
+            <div class="">
+              <input type="radio" name="customer" id="customer-yes" />
+              <label for="">No</label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="submit-btn">Register</button>
+      </div>
+    </form>
+    <script>
+      const form = document.querySelector(".event-form");
+      const confirmationP = document.querySelector(".confimation-p");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        confirmationP.textContent = "Thank you for registering for this event!";
+        confirmationP.style.display = "block";
+
+        setTimeout(() => {
+          confirmationP.textContent = "";
+          confirmationP.style.display = "none";
+        }, 3000);
+
+        event.target.reset();
+      });
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
